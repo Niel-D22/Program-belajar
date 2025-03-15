@@ -210,4 +210,5 @@ function oriText() {
 
 // ------------ARRAY-----------
 
-const arraSaya = ['','','']*/        
+const arraSaya = ['','','']
+console.log(arrasayaSaya[])
