@@ -1,0 +1,213 @@
+/*let dataString = "Saya";
+
+console.log(dataString);
+// escape string
+let data1 = 'ucup"\tberkata apakabar dunia"';
+console.log(data1);
+let data2 = 'otong berkata "tetep asyik"';
+console.log(data2);
+let data3 = "ucup berjalan-jalan di pantai,  \nkeren";
+console.log(data3);
+
+// literal string
+let namaDepan = "daniel";
+let namaBelakang = "warouw";
+let umur = 7;
+let namaLengkap =
+  "umur:" + umur + " " + "\nnama :" + namaDepan + " " + namaBelakang;
+console.log(namaLengkap);
+
+//lebih simple
+let biodata = `${namaDepan} ${namaBelakang} dengan umur ${umur}`;
+console.log(biodata);
+
+//operasi string
+let dataString = "abcdef";
+let dataChar = dataString.charAt(7);
+console.log(dataChar);
+
+function luasAlas(a, t) {
+  return a * t * 0.5;
+}
+console.log(luasAlas(10, 15));
+
+
+const angka = 3;
+function bilangan(angka) {
+  if (angka % 2 === 0) {
+    return "Genap";
+  } else {
+    return "ganjil";
+  }
+}
+console.log(bilangan(3));
+
+let usia = 19;
+usia = 20 * 2;
+
+console.log(`daniel usia kamu adalah\t` + usia);
+alert(usia);
+
+//const prompt = require("prompt-sync")();
+
+//let usia = prompt("masukan nama anda; ");
+//alert(`usia` + usia);
+
+
+let nama = "daniel"; // tipe string
+let usia = 19; // tipe int
+let tinggiBadan = 174.5; // tioe doubel float
+let beratBadan = 75;
+let pacar = 2;
+
+if (pacar == null) {
+  pacar = `belum punya`;
+} else {
+  pacar = `udah punya`;
+}
+
+let saldoAwal = 50000;
+let saldoTambahan = 80000;
+const hutang = 30000;
+const saldoAkhir = saldoAwal + saldoTambahan - hutang;
+
+const x = 3;
+const y = 5;
+const z = x / y;
+
+alert(` nilai x =${x}, nilai y =${y},nilai z =${z}`);
+   
+switch (pacar) {
+  case 1:
+    pacar = "punya 1 pacar";
+    break;
+  case 2:
+    pacar = "punya 2, aku playpoy";
+    break;
+  default:
+    pacar = "belum punya pacar";
+}
+
+alert(`nama sayaa =${nama} usia saya =${usia} tinggibadan =${tinggiBadan}cm berat badan =${beratBadan} dan pacar saya ${pacar}`
+);
+alert(
+  `saldo awal saya sebesar ${saldoAwal} & saldo tambahan saya sbesar ${saldoTambahan}, jadi total saldo yang saya miliki sebanyak Rp.${saldoAkhir}`
+);
+
+
+
+//genap ganjil
+const prompt = require("prompt-sync")();
+
+let input = true;
+
+while (input) {
+  let nilai = prompt("masukan nilai;");
+
+  if (nilai % 2 == 0) {
+    console.log("genap");
+  } else {
+    console.log("ganjil");
+  }
+
+  let lanjut = prompt("lanjut: y/n: ").toLowerCase();
+
+  switch (lanjut) {
+    case "y":
+      input = true;
+      break;
+    case "n":
+      console.log("selesai");
+      input = false;
+      break;
+    default:
+      console.log("input tidak valid");
+  }
+}*/
+
+//  -------------------DOM--------------------
+console.log(document.title);
+
+title = `daniel`;
+const body = document.body;
+body.append(`HELLO WORLD`);
+
+const h1 = document.createElement(`h1`); // <h1></h1>
+h1.textContent = `anjay mabar`; // <h1>anjay mabar</h1>
+
+const namaSaya = document.createElement(`p`);
+namaSaya.innerHTML = `<marquee>riky</marquee>`;
+
+const namaKamu = document.createElement(`b`);
+namaKamu.innerText = `warouw`;
+
+body.append(h1);
+body.append(namaSaya);
+body.append(namaKamu);
+
+document.titel = `daniel22`;
+const bosy = document.body;
+const btn1 = document.getElementById(`btn2`);
+const btn2 = document.querySelector(`button`);
+
+const defaultText = "klik saya 1";
+btn1.textContent = defaultText;
+
+btn1.style.border = `none`;
+btn1.style.padding = `8px`;
+btn1.style.color = `blue`;
+btn1.style.fontSize = `50px`;
+btn1.style.background = "tomato  ";
+
+function clickbutton() {
+  btn1.style.background = "aqua";
+}
+function ubahText() {
+  btn1.textContent = "hihihi haha";
+}
+function oriText() {
+  btn1.textContent = defaultText;
+}
+/*
+// ---------------------FUNCTION-----------------------
+// function addName() {
+//   // bisa pakai argument/ pakai parameter fuction
+//   console.log("nama depan :", arguments[0]);
+//   console.log("nama belakang :", arguments[1]);
+// }
+// addName("daniel", "warouw");
+
+// const fullName = function nama(firstname, lastname) {
+//   console.log(firstname, lastname);
+// };
+// fullName("daniel ", "warouw");
+
+// // cara 1 keword fuction
+// const sum1 = new Function("x", "y", "console.log(x*y)");
+
+// //cara 2 standar fuction
+// function sum2(x, y) {
+//   console.log(x * y);
+// }
+
+// // cara 3 arrow fuction
+// const sum3 = (x, y) => {
+//   console.log(x + y);
+// };
+// sum1(1, 2);
+// sum2(2, 4);
+// sum3(5, 5);
+
+// function random() {
+//   const angkaRandom = ~~(Math.random() * 1000);
+//   if (angkaRandom > 200) {
+//     console.log("wah lebih dari 200", angkaRandom);
+//   } else {
+//     console.log(angkaRandom);
+//   }
+// }
+// random();
+
+// ------------ARRAY-----------
+
+const arraSaya = ['','','']*/        
